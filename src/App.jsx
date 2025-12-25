@@ -1,6 +1,7 @@
 import React from 'react'
 import Header from './Components/Header'
 import Home from './Components/Home'
+import Projects from './Components/Projects'
 
 
 function App() {
@@ -11,6 +12,7 @@ function App() {
 
       <main>
         <Home />
+        <Projects />
       </main>
 
     </div>
