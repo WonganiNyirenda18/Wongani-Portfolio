@@ -6,17 +6,17 @@ const projects = [
     {
         title: "Inshuwa",
         description: "A webapp that connects insurance companies to customers",
-        image: { Inshuwa }
+        image: Inshuwa
     },
     {
         title: "E-Commerce site",
         description: "A school project in software engineering course aimed to teach collaboration",
-        image: { Ecom }
+        image: Ecom
     },
     {
         title: "CloudPay",
         description: "A payment gateway that smoothens local and international transactions",
-        image: { CloudPay }
+        image: CloudPay
     }
 ];
 
