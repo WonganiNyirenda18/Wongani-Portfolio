@@ -15,14 +15,22 @@ export default function Header() {
                 </div>
 
                 <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li>About</li>
-                        <li>Projects</li>
-                        <li>Services</li>
+                    <ul className="flex items-center gap-8 font-medium text-gray-700">
+                        <li className="cursor-pointer hover:text-blue-600 transition">Home</li>
+                        <li className="cursor-pointer hover:text-blue-600 transition">About</li>
+                        <li className="cursor-pointer hover:text-blue-600 transition">Projects</li>
+                        <li className="cursor-pointer hover:text-blue-600 transition">Services</li>
                     </ul>
                 </nav>
-                <button>Let's Talk </button>
+
+                <div>
+                    <button
+                        type="button"
+                        className="bg-blue-600 text-white px-6 py-2 rounded-md font-medium hover:bg-blue-700 transition shadow-lg shadow-blue-200 cursor-pointer"
+                    >
+                        Let's Talk
+                    </button>
+                </div>
             </div>
 
         </header>
