@@ -1,13 +1,15 @@
-import Champo from '../Assets/champo1.jpg';
+import React from 'react';
+import Champo from '../Assets/champo1.jpg'
 
 export default function Home() {
     return (
         <section className="bg-white py-20">
-            <div className="max-w-xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+            <div className="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-12 items-center">
+
                 <div>
                     <span className="text-blue-600 font-semibold text-lg mb-2 block">Hello, I am</span>
                     <h1 className="text-5xl font-bold text-gray-900 mb-4 tracking-tight">Wongani Nyirenda</h1>
-                    <p className="text-xl text-gray-700 font-medium mb-6">Frontnd Developer</p>
+                    <p className="text-xl text-gray-700 font-medium mb-6">FrontEnd Developer</p>
                     <p className="text-gray-500 mb-8 max-w-lg leading-relaxed text-lg">
                         I have been practising FrontEnd development and its related field for a while now.
                         I am fluent in UI/UX designing, research, and Web Development
@@ -31,5 +33,5 @@ export default function Home() {
                 </div>
             </div>
         </section>
-    );
+    )
 }
