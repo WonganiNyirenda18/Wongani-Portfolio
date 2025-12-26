@@ -14,7 +14,7 @@ export default function Header() {
                     </div>
                 </div>
 
-                <nav>
+                <nav className="hidden md:block">
                     <ul className="flex items-center gap-8 font-medium text-gray-700">
                         <li className="cursor-pointer hover:text-blue-600 transition">Home</li>
                         <li className="cursor-pointer hover:text-blue-600 transition">About</li>
