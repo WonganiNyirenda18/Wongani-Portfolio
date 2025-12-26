@@ -35,7 +35,7 @@ export default function Header() {
                 <div>
                     <button
                         type="button"
-                        className="bg-blue-600 text-white px-6 py-2 rounded-md font-medium hover:bg-blue-700 transition shadow-lg shadow-blue-200 cursor-pointer"
+                        className="bg-blue-600 text-white px-6 py-2 rounded-md font-medium hover:bg-blue-700 transition shadow-lg shadow-blue-200 cursor-pointer hidden md:block"
                     >
                         Let's Talk
                     </button>
@@ -49,6 +49,20 @@ export default function Header() {
                     <FontAwesomeIcon icon={faBars} />
                 </button>
             </div>
+
+            {openMenu && (
+                <div className="absolute top-16 right-0 w-64 bg-white shadow-lg">
+                    <ul className="flex flex-col gap-2 p-4">
+                        <li className="cursor-pointer hover:text-blue-700 transition">Home</li>
+                        <li className="cursor-pointer hover:text-blue-600 transition">About</li>
+                        <li className="cursor-pointer hover:text-blue-600 transition">Projects</li>
+                        <li className="cursor-pointer hover:text-blue-600 transition">Services</li>
+                    </ul>
+                </div>
+
+            )}
+
+
         </header>
     );
 }
