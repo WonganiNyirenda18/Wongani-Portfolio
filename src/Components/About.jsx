@@ -9,12 +9,12 @@ export default function About() {
 
                     <div className="md:w-3/4 space-y-8 text-gray-600 leading-relaxed text-lg">
                         <p>
-                            A Third year Student at the University of Malawi (UNIMA) persuing bachelor of science in Information Systems.
-                            A founder of Tech Addicts, a small tech company that specialises in the dynamism of tech transformation from software through to hardware
+                            I am a third-year Bachelor of Science in Information Systems student at the University of Malawi (UNIMA) and the founder of Tech Addicts,
+                            a tech company focused on driving digital transformation through innovative software and hardware solutions.
                         </p>
                         <p>
-                            A Third year Student at the University of Malawi (UNIMA) persuing bachelor of science in Information Systems.
-                            A founder of Tech Addicts, a small tech company that specialises in the dynamism of tech transformation from software through to hardware
+                            I am also a digital marketer specializing in building strong online presence for businesses, from small-scale startups to large enterprises.
+                            I thrive in collaborative environments, bringing both leadership and a willingness to learn, while contributing effectively to team success and shared goals.
                         </p>
                     </div>
                 </div>
