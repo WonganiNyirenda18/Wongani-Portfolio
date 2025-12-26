@@ -1,11 +1,6 @@
 @import "tailwindcss";
 
-@theme {
-    --font-sans: "Inter", "sans-serif";
-}
-
 body {
-    font-family: var(--font-sans);
+    @apply font-sans;
     background-color: #f8faff;
-    /* Light background from design */
 }
