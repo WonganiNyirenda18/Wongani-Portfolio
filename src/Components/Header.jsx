@@ -1,6 +1,13 @@
+import { useState } from 'react';
 import Logo from '../Assets/logo.png'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars } from '@fortawesome/free-solid-svg-icons';
 
 export default function Header() {
+
+    const [openMenu, setOpenMenu] = useState(false);
+
+
     return (
         <header className="bg-white py-4 shadow-sm">
             <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
@@ -33,6 +40,14 @@ export default function Header() {
                         Let's Talk
                     </button>
                 </div>
+
+                <button
+                    type='button'
+                    onClick={() => setOpenMenu(!openMenu)}
+                    className='md:hidden'
+                >
+                    <FontAwesomeIcon icon={faBars} />
+                </button>
             </div>
         </header>
     );
