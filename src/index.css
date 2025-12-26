@@ -4,3 +4,7 @@ body {
     @apply font-sans;
     background-color: #f8faff;
 }
+
+html {
+    scroll-behavior: smooth;
+}

@@ -25,12 +25,21 @@ export default function Header() {
 
                 <nav className="hidden md:block">
                     <ul className="flex items-center gap-8 font-medium text-gray-700">
-                        <li className="cursor-pointer hover:text-blue-700 transition">Home</li>
-                        <li className="cursor-pointer hover:text-blue-600 transition">About</li>
-                        <li className="cursor-pointer hover:text-blue-600 transition">Projects</li>
-                        <li className="cursor-pointer hover:text-blue-600 transition">Services</li>
+                        <li>
+                            <a href="#home" className="hover:text-blue-700 transition">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" className="hover:text-blue-600 transition">About</a>
+                        </li>
+                        <li>
+                            <a href="#projects" className="hover:text-blue-600 transition">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#services" className="hover:text-blue-600 transition">Services</a>
+                        </li>
                     </ul>
                 </nav>
+
 
                 <div>
                     <button
@@ -52,14 +61,21 @@ export default function Header() {
 
             {openMenu && (
                 <div className="absolute top-16 right-0 w-64 bg-white shadow-lg">
-                    <ul className="flex flex-col gap-2 p-4">
-                        <li className="cursor-pointer hover:text-blue-700 transition">Home</li>
-                        <li className="cursor-pointer hover:text-blue-600 transition">About</li>
-                        <li className="cursor-pointer hover:text-blue-600 transition">Projects</li>
-                        <li className="cursor-pointer hover:text-blue-600 transition">Services</li>
+                    <ul className="flex flex-col gap-4 p-4">
+                        <li>
+                            <a href="#home" onClick={() => setOpenMenu(false)}>Home</a>
+                        </li>
+                        <li>
+                            <a href="#about" onClick={() => setOpenMenu(false)}>About</a>
+                        </li>
+                        <li>
+                            <a href="#projects" onClick={() => setOpenMenu(false)}>Projects</a>
+                        </li>
+                        <li>
+                            <a href="#services" onClick={() => setOpenMenu(false)}>Services</a>
+                        </li>
                     </ul>
                 </div>
-
             )}
 
 
