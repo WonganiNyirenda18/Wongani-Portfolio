@@ -13,25 +13,22 @@ export default function Contacts() {
                     <h2 className="text-3xl font-bold text-gray-900 mb-2">Contacts</h2>
                 </div>
 
-                <div className="space-y-6 max-w-lg mx-auto mb-16">
-                    <div className="flex items-center justify-between md:justify-center gap-12">
-                        <span className="font-bold text-gray-900">Email</span>
-                        <span className="text-gray-600">wonganinyirenda18@gmail.com</span>
-                    </div>
-                    <div className="flex items-center justify-between md:justify-center gap-12">
-                        <span className="font-bold text-gray-900">WhatsApp</span>
-                        <span className="text-gray-600">+265 995 358 915</span>
-                    </div>
-                    <div className="flex items-center justify-between md:justify-center gap-12">
-                        <span className="font-bold text-gray-900">Phone Number</span>
-                        <span className="text-gray-600">+265 995 358 915</span>
-                    </div>
+                <div>
+                    <form>
+                        <input type="text" placeholder="Name" />
+                        <input type="email" placeholder="Email" />
+                        <textarea placeholder="Message"></textarea>
+                        <button type="submit">Send</button>
+                    </form>
                 </div>
+                <div>
+                    <p>Social Media Links</p>
+                    <div className="py-8 flex items-center justify-center gap-6">
+                        <FontAwesomeIcon icon={faLinkedinIn} />
+                        <FontAwesomeIcon icon={faWhatsapp} />
+                        <FontAwesomeIcon icon={faGithub} />
+                    </div>
 
-                <div className="flex items-center justify-center gap-6">
-                    <FontAwesomeIcon icon={faLinkedinIn} />
-                    <FontAwesomeIcon icon={faWhatsapp} />
-                    <FontAwesomeIcon icon={faGithub} />
                 </div>
 
             </div>
