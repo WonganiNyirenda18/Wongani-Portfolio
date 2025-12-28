@@ -14,13 +14,65 @@ export default function Contacts() {
                 </div>
 
                 <div>
-                    <form>
-                        <input type="text" placeholder="Name" />
-                        <input type="email" placeholder="Email" />
-                        <textarea placeholder="Message"></textarea>
-                        <button type="submit">Send</button>
+                    <form className="space-y-6">
+                        {/* Name fields */}
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label className="block text-sm mb-1">
+                                    First Name
+                                </label>
+                                <input
+                                    type="text"
+                                    className="w-full border border-gray-300 px-4 py-2 outline-none focus:border-blue-600"
+                                />
+                            </div>
+
+                            <div>
+                                <label className="block text-sm mb-1">
+                                    Last Name
+                                </label>
+                                <input
+                                    type="text"
+                                    className="w-full border border-gray-300 px-4 py-2 outline-none focus:border-blue-600"
+                                />
+                            </div>
+                        </div>
+
+                        {/* Email */}
+                        <div>
+                            <label className="block text-sm mb-1">
+                                Email *
+                            </label>
+                            <input
+                                type="email"
+                                required
+                                className="w-full border border-gray-300 px-4 py-2 outline-none focus:border-blue-600"
+                            />
+                        </div>
+
+                        {/* Message */}
+                        <div>
+                            <label className="block text-sm mb-1">
+                                Message
+                            </label>
+                            <textarea
+                                rows="5"
+                                className="w-full border border-gray-300 px-4 py-2 outline-none focus:border-blue-600"
+                            ></textarea>
+                        </div>
+
+                        {/* Button */}
+                        <div className="text-right">
+                            <button
+                                type="submit"
+                                className="bg-[#8b3f1f] text-white px-8 py-2 hover:bg-[#723219] transition"
+                            >
+                                Send
+                            </button>
+                        </div>
                     </form>
                 </div>
+
                 <div>
                     <p>Social Media Links</p>
                     <div className="py-8 flex items-center justify-center gap-6">
