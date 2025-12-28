@@ -1,3 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+
+
 export default function Contacts() {
     return (
         <section className="bg-white-50 py-20" id="contacts">
