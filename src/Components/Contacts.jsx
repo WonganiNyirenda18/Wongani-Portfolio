@@ -1,4 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
+import { faWhatsapp } from '@fortawesome/free-brands-svg-icons/faWhatsapp';
+import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 
 
 export default function Contacts() {
@@ -23,6 +26,12 @@ export default function Contacts() {
                         <span className="font-bold text-gray-900">Phone Number</span>
                         <span className="text-gray-600">+265 995 358 915</span>
                     </div>
+                </div>
+
+                <div className="flex items-center justify-center gap-6">
+                    <FontAwesomeIcon icon={faLinkedinIn} />
+                    <FontAwesomeIcon icon={faWhatsapp} />
+                    <FontAwesomeIcon icon={faGithub} />
                 </div>
 
             </div>
