@@ -65,7 +65,7 @@ export default function Contacts() {
                         <div className="text-right">
                             <button
                                 type="submit"
-                                className="bg-[#8b3f1f] text-white px-8 py-2 hover:bg-[#723219] transition"
+                                className="bg-blue-600 text-white px-8 py-2 hover:bg-blue-700 transition"
                             >
                                 Send
                             </button>
