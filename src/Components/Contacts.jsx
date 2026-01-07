@@ -1,3 +1,5 @@
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn';
 import { faWhatsapp } from '@fortawesome/free-brands-svg-icons/faWhatsapp';
@@ -5,6 +7,27 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons/faGithub';
 
 
 export default function Contacts() {
+
+    const form = useRef();
+
+    const sendEmail = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm(
+            "service_nkgailt",
+            "template_oud2mfh",
+            form.current,
+            "qrgW6espVilEXu1c9"
+        )
+            .then(() => {
+                alert("Message sent successfully");
+                form.current.reset();
+            })
+            .catch((error) => {
+                console.log(error);
+            });
+    };
+
     return (
         <section className="bg-white-50 py-20" id="contacts">
             <div className="max-w-xl mx-auto px-6 text-center">
