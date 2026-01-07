@@ -46,6 +46,8 @@ export default function Contacts() {
                                 </label>
                                 <input
                                     type="text"
+                                    name="name"
+                                    required
                                     className="w-full border border-gray-300 px-4 py-2 outline-none focus:border-blue-600"
                                 />
                             </div>
@@ -56,6 +58,7 @@ export default function Contacts() {
                                 </label>
                                 <input
                                     type="text"
+                                    required
                                     className="w-full border border-gray-300 px-4 py-2 outline-none focus:border-blue-600"
                                 />
                             </div>
@@ -68,6 +71,7 @@ export default function Contacts() {
                             </label>
                             <input
                                 type="email"
+                                name="email"
                                 required
                                 className="w-full border border-gray-300 px-4 py-2 outline-none focus:border-blue-600"
                             />
@@ -79,6 +83,7 @@ export default function Contacts() {
                                 Message
                             </label>
                             <textarea
+                                name="message"
                                 rows="5"
                                 className="w-full border border-gray-300 px-4 py-2 outline-none focus:border-blue-600"
                             ></textarea>
