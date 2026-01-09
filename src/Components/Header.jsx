@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import Logo from '../Assets/logo.png';
+import Logo2 from '../Assets/Logo2.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
 
@@ -11,12 +12,12 @@ export default function Header() {
             {/* HEADER */}
             <header className="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
                 <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
-                    <img src={Logo} alt="Logo" className="w-10 h-10 object-contain" />
+                    <img src={Logo2} alt="Logo" className="w-15 h-15 object-contain" />
 
                     {/* Desktop Nav */}
                     <nav className="hidden md:block">
                         <ul className="flex gap-8 font-medium text-gray-700">
-                            <li><a href="#home">Home</a></li>
+                            <li><a href="/">Home</a></li>
                             <li><a href="#about">About</a></li>
                             <li><a href="#projects">Projects</a></li>
                             <li><a href="#services">Services</a></li>
