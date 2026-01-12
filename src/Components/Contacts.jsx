@@ -101,16 +101,14 @@ export default function Contacts() {
                     </form>
                 </div>
 
-                <div>
-                    <p>Social Media Links</p>
-                    <div className="py-8 flex items-center justify-center gap-6">
-                        <FontAwesomeIcon icon={faLinkedinIn} />
-                        <FontAwesomeIcon icon={faWhatsapp} />
-                        <FontAwesomeIcon icon={faGithub} />
+                <div className="mt-10 text-center">
+                    <p className="text-gray-600 mb-4">Social Media Links</p>
+                    <div className="flex justify-center gap-6 text-gray-700 text-xl">
+                        <FontAwesomeIcon icon={faLinkedinIn} className="hover:text-blue-600 cursor-pointer" />
+                        <FontAwesomeIcon icon={faWhatsapp} className="hover:text-green-600 cursor-pointer" />
+                        <FontAwesomeIcon icon={faGithub} className="hover:text-black cursor-pointer" />
                     </div>
-
                 </div>
-
             </div>
         </section>
     );
