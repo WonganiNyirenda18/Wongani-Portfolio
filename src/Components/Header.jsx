@@ -8,12 +8,12 @@ export default function Header() {
 
     return (
         <>
-            {/* HEADER */}
+
             <header className="fixed top-0 left-0 w-full bg-white shadow-sm z-50">
                 <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
                     <img src={Logo2} alt="Logo" className="w-15 h-15 object-contain" />
 
-                    {/* Desktop Nav */}
+
                     <nav className="hidden md:block">
                         <ul className="flex gap-8 font-medium text-gray-700">
                             <li><a href="/">Home</a></li>
@@ -27,7 +27,7 @@ export default function Header() {
                         Let's Talk
                     </button>
 
-                    {/* Mobile Toggle */}
+
                     <button
                         onClick={() => setOpenMenu(true)}
                         className="md:hidden text-xl"
@@ -37,14 +37,14 @@ export default function Header() {
                 </div>
             </header>
 
-            {/* OVERLAY */}
+
             <div
                 onClick={() => setOpenMenu(false)}
                 className={`fixed inset-0 bg-black/40 z-40 transition-opacity duration-300
           ${openMenu ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
             />
 
-            {/* MOBILE MENU */}
+
             <aside
                 className={`fixed top-0 right-0 h-full w-64 bg-white z-50 shadow-lg
           transform transition-transform duration-300 ease-in-out
@@ -72,7 +72,7 @@ export default function Header() {
                 </ul>
             </aside>
 
-            {/* PAGE OFFSET */}
+
             <div className="h-20" />
         </>
     );
