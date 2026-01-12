@@ -40,66 +40,64 @@ export default function Contacts() {
 
                 <div className="bg-white p-8 rounded-xl shadow-mg">
                     <form ref={form} onSubmit={sendEmail} className="space-y-6">
-                        {/* Name fields */}
-                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-                            <div>
-                                <label className="block text-sm mb-1">
-                                    First Name
-                                </label>
-                                <input
-                                    type="text"
-                                    name="name"
-                                    required
-                                    className="w-full border border-gray-300 px-4 py-2 outline-none focus:border-blue-600"
-                                />
-                            </div>
 
-                            <div>
-                                <label className="block text-sm mb-1">
-                                    Last Name
-                                </label>
-                                <input
-                                    type="text"
-                                    required
-                                    className="w-full border border-gray-300 px-4 py-2 outline-none focus:border-blue-600"
-                                />
-                            </div>
+
+                        <div>
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
+                                Full Name *
+                            </label>
+
+                            <input
+                                type="text"
+                                name="name"
+                                required
+                                placeholder="Your full name"
+                                className="w-full rounded-md border border-gray-300 px-4 py-3
+                                           focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600"
+                            />
                         </div>
 
-                        {/* Email */}
+
                         <div>
-                            <label className="block text-sm mb-1">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
                                 Email *
                             </label>
+
                             <input
                                 type="email"
                                 name="email"
                                 required
-                                className="w-full border border-gray-300 px-4 py-2 outline-none focus:border-blue-600"
+                                placeholder="email@example.com"
+                                className="w-full rounded-md border border-gray-300 px-4 py-3
+                                           focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600"
                             />
                         </div>
 
-                        {/* Message */}
+
                         <div>
-                            <label className="block text-sm mb-1">
+                            <label className="block text-sm font-medium text-gray-700 mb-1">
                                 Message
                             </label>
+
                             <textarea
                                 name="message"
+                                required
                                 rows="5"
-                                className="w-full border border-gray-300 px-4 py-2 outline-none focus:border-blue-600"
-                            ></textarea>
+                                placeholder="Write your message here..."
+                                className="w-full rounded-md border border-gray-300 px-4 py-3
+                                           focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600"
+                            />
                         </div>
 
-                        {/* Button */}
-                        <div className="text-right">
-                            <button
-                                type="submit"
-                                className="bg-blue-600 text-white px-8 py-2 hover:bg-blue-700 transition"
-                            >
-                                Send
-                            </button>
-                        </div>
+                        <button
+                            type="submit"
+                            className="w-full bg-blue-600 text-white py-3 rounded-md font-medium
+                                       hover:bg-blue-700 transition"
+                        >
+                            Send Message
+                        </button>
+
+
                     </form>
                 </div>
 
