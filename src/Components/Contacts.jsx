@@ -30,13 +30,15 @@ export default function Contacts() {
 
     return (
         <section className="bg-white-50 py-20" id="contacts">
-            <div className="max-w-xl mx-auto px-6 text-center">
+            <div className="max-w-xl mx-auto px-6">
 
-                <div className="flex flex-col items-center mb-12">
-                    <h2 className="text-3xl font-bold text-gray-900 mb-2">Contacts</h2>
+
+                <div className="text-center mb-10">
+                    <h2 className="text-3xl font-bold text-gray-900">Contacts</h2>
                 </div>
 
-                <div>
+
+                <div className="bg-white p-8 rounded-xl shadow-mg">
                     <form ref={form} onSubmit={sendEmail} className="space-y-6">
                         {/* Name fields */}
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
