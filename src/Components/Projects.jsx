@@ -31,12 +31,13 @@ export default function Projects() {
                     {projects.map((project, index) => (
                         <motion.div
                             key={index}
-                            initial={{ opacity: 0, x: -120 }}
+                            initial={{ opacity: 0, x: -80 }}
                             whileInView={{ opacity: 1, x: 0 }}
-                            viewport={{ amount: 0.3 }}
+                            viewport={{ margin: "-120px" }}
                             transition={{
-                                duration: 0.8,
-                                ease: "easeOut"
+                                type: "spring",
+                                stiffness: 120,
+                                damping: 18
                             }}
                             className="bg-blue-50/50 rounded-lg overflow-hidden hover:shadow-lg transition duration-300 border border-gray-100" >
                             <div className="h-48 overflow-hidden">
