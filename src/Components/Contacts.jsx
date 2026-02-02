@@ -106,7 +106,7 @@ export default function Contacts() {
 
                     <div className="flex justify-center gap-6 text-gray-700 text-xl">
                         <a
-                            href="#"
+                            href="https://www.linkedin.com/in/wongani-nyirenda-068b68262?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BXddI6NwSTsS2N%2FMZTWJmPw%3D%3D"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:text-blue-600 cursor-pointer"
@@ -115,7 +115,7 @@ export default function Contacts() {
                         </a>
 
                         <a
-                            href="#"
+                            href="https://wa.me/265995358915"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:text-green-600 cursor-pointer"
@@ -124,7 +124,7 @@ export default function Contacts() {
                         </a>
 
                         <a
-                            href="#"
+                            href="https://github.com/WonganiNyirenda18"
                             target="_blank"
                             rel="noopener noreferrer"
                             className="hover:text-black cursor-pointer"
