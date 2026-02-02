@@ -104,12 +104,12 @@ export default function Contacts() {
 
                     <p className="text-gray-600 mb-4">Social Media Links</p>
 
-                    <div>
+                    <div className="flex justify-center gap-6 text-gray-700 text-xl">
                         <a
-                            href=""
-                            target=""
-                            rel=""
-                            className=""
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-blue-600 cursor-pointer"
                         >
                             <FontAwesomeIcon icon={faLinkedinIn} />
                         </a>
