@@ -102,6 +102,18 @@ export default function Contacts() {
 
                 <div className="mt-10 text-center">
 
+                    <p className="text-gray-600 mb-4">Social Media Links</p>
+
+                    <div>
+                        <a
+                            href=""
+                            target=""
+                            rel=""
+                            className=""
+                        >
+                            <FontAwesomeIcon icon={faLinkedinIn} />
+                        </a>
+                    </div>
                 </div>
 
             </div>
