@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Inshuwa from "../Assets/inshuwa.jpg";
 import Ecom from "../Assets/ecomm.jpg";
 import CloudPay from "../Assets/cloud.jpg";
