@@ -113,6 +113,24 @@ export default function Contacts() {
                         >
                             <FontAwesomeIcon icon={faLinkedinIn} />
                         </a>
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-green-600 cursor-pointer"
+                        >
+                            <FontAwesomeIcon icon={faWhatsapp} />
+                        </a>
+
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="hover:text-black cursor-pointer"
+                        >
+                            <FontAwesomeIcon icon={faGithub} />
+                        </a>
                     </div>
                 </div>
 
