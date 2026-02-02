@@ -29,7 +29,13 @@ export default function Projects() {
 
                 <div className="grid md:grid-cols-3 gap-8 mb-12">
                     {projects.map((project, index) => (
-                        <div key={index} className="bg-blue-50/50 rounded-lg overflow-hidden hover:shadow-lg transition duration-300 border border-gray-100">
+                        <motion.div
+                            key={index}
+                            initial={{ opacity: 0, x: 50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            viewport={{ once: true }}
+                            transition={{ duration: 0.6, delay: index * 0.15 }}
+                            className="bg-blue-50/50 rounded-lg overflow-hidden hover:shadow-lg transition duration-300 border border-gray-100">
                             <div className="h-48 overflow-hidden">
                                 <img
                                     src={project.image}
@@ -41,7 +47,7 @@ export default function Projects() {
                                 <h3 className="font-bold text-gray-900 mb-2">{project.title}</h3>
                                 <p className="text-gray-600 text-sm leading-relaxed">{project.description}</p>
                             </div>
-                        </div>
+                        </motion.div>
                     ))}
                 </div>
 
