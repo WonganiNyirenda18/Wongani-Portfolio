@@ -97,8 +97,11 @@ export default function Contacts() {
                             Send Message
                         </button>
 
-
                     </form>
+                </div>
+
+                <div className="mt-10 text-center">
+
                 </div>
 
             </div>
