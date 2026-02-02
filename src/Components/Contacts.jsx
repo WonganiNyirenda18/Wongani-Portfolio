@@ -53,7 +53,7 @@ export default function Contacts() {
                                 required
                                 placeholder="Your full name"
                                 className="w-full rounded-md border border-gray-300 px-4 py-3
-                                           focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600"
+                                           focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
                             />
                         </div>
 
@@ -69,7 +69,7 @@ export default function Contacts() {
                                 required
                                 placeholder="email@example.com"
                                 className="w-full rounded-md border border-gray-300 px-4 py-3
-                                           focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600"
+                                           focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
                             />
                         </div>
 
@@ -85,7 +85,7 @@ export default function Contacts() {
                                 rows="5"
                                 placeholder="Write your message here..."
                                 className="w-full rounded-md border border-gray-300 px-4 py-3
-                                           focus:outline-none focus:ring-2 focus:ring-blue-600 focus:border-blue-600"
+                                           focus:outline-none focus:ring-2 focus:ring-blue-400 focus:border-blue-400"
                             />
                         </div>
 
