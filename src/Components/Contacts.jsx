@@ -101,24 +101,7 @@ export default function Contacts() {
                     </form>
                 </div>
 
-                <div className="mt-10 text-center">
-                    <p className="text-gray-600 mb-4">Social Media Links</p>
-                    <div className="flex justify-center gap-6 text-gray-700 text-xl">
-
-                        <a
-                            href=""
-                            target=""
-                            rel=""
-                            className="hover:text-blue-600 cursor-pointer" />
-                        >
-                        <FontAwesomeIcon icon={faLinkedinIn} />
-                    </a>
-
-                    <FontAwesomeIcon icon={faWhatsapp} className="hover:text-green-600 cursor-pointer" />
-                    <FontAwesomeIcon icon={faGithub} className="hover:text-black cursor-pointer" />
-                </div>
             </div>
-        </div>
         </section >
     );
 }
